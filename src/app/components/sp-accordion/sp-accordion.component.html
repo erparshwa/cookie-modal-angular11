@@ -1,0 +1,16 @@
+<ngb-accordion class="sp-accordion" #spAcc="ngbAccordion">
+    <ngb-panel [cardClass]="accordionClass">
+        <ng-template ngbPanelHeader let-opened="opened">
+            <div class="d-flex align-items-center justify-content-between {{headerClass}}">
+                <ng-content select="[header]"></ng-content>
+                <button ngbPanelToggle class="btn">
+                    {{toggleLabel}}
+                    <em class="bi ml-1" [class.bi-caret-up-fill]="opened" [class.bi-caret-down-fill]="!opened"></em>
+                </button>
+            </div>
+        </ng-template>
+        <ng-template ngbPanelContent>
+            <ng-content select="[body]"></ng-content>
+        </ng-template>
+    </ngb-panel>
+</ngb-accordion>

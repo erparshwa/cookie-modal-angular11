@@ -1,0 +1,14 @@
+.modal-header {
+    border-bottom: none;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    .close{
+        padding: 0.5rem;
+        font-size: 1.25rem;
+        font-weight: 200;
+    }
+}
+
+.modal-body{
+    padding: 0;
+}

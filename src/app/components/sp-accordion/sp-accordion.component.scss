@@ -1,0 +1,17 @@
+.sp-accordion {
+     > .card {
+        border:none;
+        > .card-header {
+            padding: 0;
+            background-color: unset;
+            border-bottom: none;
+            >.btn, .btn:focus{
+                outline: 0;
+                box-shadow: none;
+            }
+        }
+        .card-body{
+            padding: 0.5rem 1.25rem;
+        }
+    }
+}
