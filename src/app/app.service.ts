@@ -4,6 +4,7 @@ import { Observable} from 'rxjs';
 import { map } from 'rxjs/operators';
 import { CookieBanner } from './models/cookie-banner.model';
 import { CookieCategory } from './models/cookie-category.model';
+import { environment } from '../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,7 @@ export class AppService {
   constructor(private http: HttpClient) {}
 
   getCookieBanner(): Observable<CookieCategory[]> {
-    const uri = `/api/common/getBanner`;
+    const uri = `${environment.apiBase}/common/getBanner`;
     return this.http.request('get', uri)
     .pipe(
       map(

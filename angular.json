@@ -69,8 +69,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "secure-privacy:build",
-            "proxyConfig": "./proxy.conf.json"
+            "browserTarget": "secure-privacy:build"
           },
           "configurations": {
             "production": {

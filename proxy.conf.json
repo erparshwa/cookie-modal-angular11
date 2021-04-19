@@ -1,8 +1,0 @@
-{
-    "/api/*": {
-        "target": "ttps://fast-lowlands-95849.herokuapp.com",
-        "secure": false,
-        "changeOrigin": true,
-        "logLevel": "debug"
-    }
-}
